@@ -1,0 +1,33 @@
+/**
+* Orchestra Linkify-Addon 
+*
+* Add Links to Twitter and URL links to strings in your Orchestra MVC Apps 
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+------------------------------------------------------
+What:
+This is an instrument file for adding links to Twitter and URL links to strings in your Orchestra MVC Apps.
+This adds a method for adding auto linkifying to any Twitter username or hash tags, as well can auto link urls and email addresses.
+
+Installation:
+First you must have already installed the sys_orchestra (https://github.com/christopherhein/system-orchestra-mvc)
+If that is installed use:
+
+  $ instrument pull linkify-addon
+  
+This with build the instrument locally in /usr/local/orchestra/instruments/ once that is complete you can use:
+
+  $ instrument install linkify-addon
+  
+from the root directory of any Orchestra App and it will install all the necessary files, plus walk you through any additional steps.
+
+Enjoy!

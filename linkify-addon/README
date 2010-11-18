@@ -1,0 +1,30 @@
+--------------------------------------
+
+Linkify-Addon Instrument
+
+To finish the installation and use this instrument you have a few more steps to take:
+
+  1) Add the following to config/boot.php in the // Framework Section
+  
+      require(LIB.'addons/linkify.php');
+  
+  2) Add the following before "$hooks = New Hooks();" 
+
+      $core['linkify'] = New Linkify();
+      
+  3) Lastly Add the following to any .html.orc files you'd like links to appear:
+
+    <?= $linkify->text("__STRING__", array('links' => true, 'twitter' => true)); ?>
+    
+    OR for only twitter:
+    
+    <?= $linkify->twiiter("__STRING__"); ?>
+    
+    OR for only links:
+    
+    <?= $linkify->links("__STRING__"); ?>
+      
+      
+Enjoy!
+
+--------------------------------------
